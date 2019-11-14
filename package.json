@@ -1,0 +1,22 @@
+{
+  "name": "friendfinder",
+  "version": "1.0.0",
+  "description": "A fullstack dating app / friend finder using Node.js and Express.js.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HaakenJ/FriendFinder.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HaakenJ/FriendFinder/issues"
+  },
+  "homepage": "https://github.com/HaakenJ/FriendFinder#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
