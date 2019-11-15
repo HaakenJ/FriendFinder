@@ -6,12 +6,183 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Friend Finder</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="assets/scss/styleSurvey.css">
 </head>
+
+
+
 
 <body>
 
+
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo" id="main-logo">FindAFriend</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li class="github-icon"><a href="#"><i class="fab fa-github"></i></a></li>
+                <li class="home-icon"><a href="#"><i class="fas fa-home"></i></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="main-container">
+        <h3 class="header">Tell us about yourself</h3>
+        <div class="input-field" id="name">
+            <i class="material-icons prefix">account_circle</i>
+            <input placeholder="Name" type="text" class="validate">
+        </div>
+        <div class="input-field" id="photo">
+            <i class="material-icons prefix">camera</i>
+            <input placeholder="Photo Link" type="text" class="validate">
+        </div>
+        <div class="input-field question">
+            <h5>Your mind is always buzzing with unexplored ideas and plans.</h5>
+            <div class="input-field">
+                <select>
+                    <option value="" disabled selected>Choose your option</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)s</option>
+                </select>
+            </div>
+        </div>
+        <div class="input-field question">
+            <h5>Generally speaking, you rely more on your experience than your imagination.</h5>
+            <div class="input-field reponse">
+                <select>
+                    <option value="" disabled selected>Choose your option</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)s</option>
+                </select>
+            </div>
+        </div>
+        <div class="input-field question">
+            <h5>You find it easy to stay relaxed and focused even when there is some pressure.</h5>
+            <div class="input-field reponse">
+                <select>
+                    <option value="" disabled selected>Choose your option</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)s</option>
+                </select>
+            </div>
+        </div>
+        <div class="input-field question">
+            <h5>You rarely do something just out of sheer curiosity.</h5>
+            <div class="input-field reponse">
+                <select>
+                    <option value="" disabled selected>Choose your option</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)s</option>
+                </select>
+            </div>
+        </div>
+        <div class="input-field question">
+            <h5>People can rarely upset you.</h5>
+            <div class="input-field reponse">
+                <select>
+                    <option value="" disabled selected>Choose your option</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)s</option>
+                </select>
+            </div>
+        </div>
+        <div class="input-field question">
+            <h5>It is often difficult for you to relate to other people’s feelings.</h5>
+            <div class="input-field reponse">
+                <select>
+                    <option value="" disabled selected>Choose your option</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)s</option>
+                </select>
+            </div>
+        </div>
+        <div class="input-field question">
+            <h5>In a discussion, truth should be more important than people’s sensitivities.</h5>
+            <div class="input-field reponse">
+                <select>
+                    <option value="" disabled selected>Choose your option</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)s</option>
+                </select>
+            </div>
+        </div>
+        <div class="input-field question">
+            <h5>You rarely get carried away by fantasies and ideas.</h5>
+            <div class="input-field reponse">
+                <select>
+                    <option value="" disabled selected>Choose your option</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)s</option>
+                </select>
+            </div>
+        </div>
+        <div class="input-field question">
+            <h5>You think that everyone’s views should be respected regardless of whether they are supported by facts or
+                not.</h5>
+            <div class="input-field reponse">
+                <select>
+                    <option value="" disabled selected>Choose your option</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)s</option>
+                </select>
+            </div>
+        </div>
+        <div class="input-field question">
+            <h5>You feel more energetic after spending time with a group of people.</h5>
+            <div class="input-field reponse">
+                <select>
+                    <option value="" disabled selected>Choose your option</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)s</option>
+                </select>
+            </div>
+        </div>
+        <button class="btn waves-effect waves-light" type="submit" name="submit">Submit
+            <i class="material-icons right">add_circle_outline</i>
+        </button>
+    </div>
+
+
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <!-- Materialze -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/9963e93bef.js" crossorigin="anonymous"></script>
+    <script src="assets/javascript/survey.js"></script>
 </body>
 
 </html>
