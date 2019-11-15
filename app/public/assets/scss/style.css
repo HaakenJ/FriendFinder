@@ -8,12 +8,23 @@ body {
   position: absolute;
 }
 
+.nav-wrapper {
+  position: initial !important;
+}
+
+.fa-github {
+  color: #ffffff;
+}
+
+.github-icon {
+  position: absolute;
+}
+
 .main-container {
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
-  margin-top: 3%;
 }
 
 .background-img {
@@ -72,7 +83,7 @@ body {
 
   .content {
     width: 80%;
-    height: 200px;
+    height: 225px;
     padding: 25px;
   }
 
@@ -110,7 +121,7 @@ body {
 
   .content {
     width: 60%;
-    height: 200px;
+    height: 225px;
     padding: 25px;
   }
 
@@ -129,8 +140,20 @@ body {
 }
 
 @media only screen and (min-width: 1025px) {
+  .background-img {
+    width: 80%;
+    max-height: 650px;
+  }
 
+  .main-container {
+    margin-top: -2%;
+  }
+
+  .brand-logo {
+    position: absolute;
+    left: 12%;
   }
 }
+
 
 /*# sourceMappingURL=style.css.map */
