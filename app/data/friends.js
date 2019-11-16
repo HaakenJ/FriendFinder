@@ -1,6 +1,6 @@
 let friends = [{
-        "name": "Ahmed",
-        "photo": "https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAq7AAAAJDAwYzI4NTQ4LWYwZWUtNGFkYS1hNTYwLTZjYzkwY2ViZDA3OA.jpg",
+        "name": "Rachel Adams",
+        "photo": "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
         "scores": [
             "5",
             "1",
@@ -15,8 +15,8 @@ let friends = [{
         ]
     },
     {
-        "name": "Jacob Deming",
-        "photo": "https://pbs.twimg.com/profile_images/691785039043022849/oWsy8LNR.jpg",
+        "name": "Nichole Mason",
+        "photo": "https://images.pexels.com/photos/736716/pexels-photo-736716.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
         "scores": [
             "4",
             "2",
@@ -31,8 +31,8 @@ let friends = [{
         ]
     },
     {
-        "name": "Jeremiah Scanlon",
-        "photo": "https://avatars2.githubusercontent.com/u/8504998?v=3&s=460",
+        "name": "Traci Sparks",
+        "photo": "https://images.pexels.com/photos/1776862/pexels-photo-1776862.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
         "scores": [
             "5",
             "2",
@@ -47,8 +47,8 @@ let friends = [{
         ]
     },
     {
-        "name": "Louis T. Delia",
-        "photo": "https://pbs.twimg.com/profile_images/639214960049000449/lNCRC-ub.jpg",
+        "name": "Benjamin Copeland",
+        "photo": "https://images.pexels.com/photos/1212984/pexels-photo-1212984.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
         "scores": [
             "3",
             "3",
@@ -63,8 +63,8 @@ let friends = [{
         ]
     },
     {
-        "name": "Lou Ritter",
-        "photo": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAkDAAAAJDhhZTI5NTk2LWQzZjUtNDJjZi1hMTM2LTQ3ZjNmYjE0YmY2NA.jpg",
+        "name": "Alfred Flores",
+        "photo": "https://images.pexels.com/photos/769772/pexels-photo-769772.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
         "scores": [
             "4",
             "3",
@@ -79,8 +79,8 @@ let friends = [{
         ]
     },
     {
-        "name": "Jordan Biason",
-        "photo": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAisAAAAJGUxYzc4YzA0LWQxMzUtNGI4NS04YTFiLTkwYzM0YTZkNzA2NA.jpg",
+        "name": "Brittany Simpson",
+        "photo": "https://images.pexels.com/photos/1543895/pexels-photo-1543895.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
         "scores": [
             "4",
             "4",

@@ -1,7 +1,6 @@
 $(document).ready(function () {
     $('select').formSelect();
     $('.modal').modal();
-    const modalInstance = M.Modal.getInstance(elem);
 
     let user = {};
 
@@ -17,11 +16,9 @@ $(document).ready(function () {
         $.post("/api/users", user)
         .then((data) => {
             console.log(data);
-            alert("Request was successful: " + data);
-
-            
-
-            modalInstance.open();
+            $("#match-name").text(data.name);
+            $("#match-img").attr("src", data.photo);
+            $('#modal1').modal('open'); 
         });
 
         console.log(JSON.stringify(user));

@@ -13,7 +13,7 @@ app.use(express.json());
 router.post("/api/users", (req, res) => {
     const newUser = req.body;
 
-    friends.push(newUser);
+    // friends.push(newUser);
 
     res.json(findClosestMatch(friends, newUser));
 })
