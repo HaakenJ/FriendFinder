@@ -19,6 +19,8 @@ $(document).ready(function () {
             console.log(data);
             alert("Request was successful: " + data);
 
+            
+
             modalInstance.open();
         });
 
