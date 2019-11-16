@@ -8,6 +8,8 @@ app.use(express.urlencoded({
 }));
 app.use(express.json());
 
+
+// Receive user data and find their match.
 router.post("/api/users", (req, res) => {
     const newUser = req.body;
 
@@ -16,6 +18,7 @@ router.post("/api/users", (req, res) => {
     res.json(findClosestMatch(friends, newUser));
 })
 
+// Return a list of the friends to a user.
 router.get("/api/users", (req, res) => {
     return res.json(friends);
 });

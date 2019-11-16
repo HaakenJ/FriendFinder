@@ -1,5 +1,7 @@
 $(document).ready(function () {
     $('select').formSelect();
+    $('.modal').modal();
+    const modalInstance = M.Modal.getInstance(elem);
 
     let user = {};
 
@@ -16,6 +18,8 @@ $(document).ready(function () {
         .then((data) => {
             console.log(data);
             alert("Request was successful: " + data);
+
+            modalInstance.open();
         });
 
         console.log(JSON.stringify(user));
