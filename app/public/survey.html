@@ -21,7 +21,8 @@
         <div class="nav-wrapper">
             <a href="#" class="brand-logo" id="main-logo">FindAFriend</a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li class="github-icon"><a href="#"><i class="fab fa-github"></i></a></li>
+                <li class="github-icon"><a href="https://github.com/HaakenJ/FriendFinder"><i
+                            class="fab fa-github"></i></a></li>
                 <li class="github-icon"><a href="/api/users">friends</a></li>
                 <li class="home-icon"><a href="/"><i class="fas fa-home"></i></a></li>
             </ul>
@@ -37,6 +38,28 @@
         <div class="input-field" id="photo">
             <i class="material-icons prefix">camera</i>
             <input placeholder="Photo Link" id="photo-input" type="text" class="validate">
+        </div>
+        <div class="input-field question">
+            <h5>I am a...</h5>
+            <div class="input-field">
+                <select id="user-gender">
+                    <option value="" disabled selected>Choose your option</option>
+                    <option value="M">Man</option>
+                    <option value="F">Woman</option>
+                    <option value="O">Prefer not to say</option>
+                </select>
+            </div>
+        </div>
+        <div class="input-field question">
+            <h5>I'm looking to meet...</h5>
+            <div class="input-field">
+                <select id="gender-choice">
+                    <option value="" disabled selected>Choose your option</option>
+                    <option value="F">Women</option>
+                    <option value="M">Men</option>
+                    <option value="Either">Either</option>
+                </select>
+            </div>
         </div>
         <div class="input-field question">
             <h5>Your mind is always buzzing with unexplored ideas and plans.</h5>

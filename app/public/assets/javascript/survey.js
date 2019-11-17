@@ -7,6 +7,8 @@ $(document).ready(function () {
     $("#submit-btn").on("click", () => {
         user.name = $("#name-input").val().trim();
         user.photo = $("#photo-input").val().trim();
+        user.gender = $("#user-gender").val().trim();
+        // To-do: specify code for user's choice of gender
         let scores = [];
         for (let i = 1; i <= 10; i++) {
             scores.push(parseInt($("#q-" + i).val()));

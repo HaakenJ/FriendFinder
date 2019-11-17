@@ -1,5 +1,6 @@
 let friends = [{
         "name": "Rachel Adams",
+        "gender": "F",
         "photo": "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
         "scores": [
             "5",
@@ -16,6 +17,7 @@ let friends = [{
     },
     {
         "name": "Nichole Mason",
+        "gender": "F",
         "photo": "https://images.pexels.com/photos/736716/pexels-photo-736716.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
         "scores": [
             "4",
@@ -31,7 +33,8 @@ let friends = [{
         ]
     },
     {
-        "name": "Traci Sparks",
+        "name": "Tracy Sparks",
+        "gender": "F",
         "photo": "https://images.pexels.com/photos/1776862/pexels-photo-1776862.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
         "scores": [
             "5",
@@ -48,6 +51,7 @@ let friends = [{
     },
     {
         "name": "Benjamin Copeland",
+        "gender": "M",
         "photo": "https://images.pexels.com/photos/1212984/pexels-photo-1212984.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
         "scores": [
             "3",
@@ -64,6 +68,7 @@ let friends = [{
     },
     {
         "name": "Alfred Flores",
+        "gender": "M",
         "photo": "https://images.pexels.com/photos/769772/pexels-photo-769772.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
         "scores": [
             "4",
@@ -80,6 +85,7 @@ let friends = [{
     },
     {
         "name": "Brittany Simpson",
+        "gender": "F",
         "photo": "https://images.pexels.com/photos/1543895/pexels-photo-1543895.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
         "scores": [
             "4",
