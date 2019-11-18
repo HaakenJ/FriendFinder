@@ -181,21 +181,38 @@
                 </select>
             </div>
         </div>
-        <button data-target="modal1" class="btn waves-effect waves-light" id="submit-btn" type="submit"
+        <button data-target="match-modal" class="btn waves-effect waves-light" id="submit-btn" type="submit"
             name="submit">Submit
             <i class="material-icons right">add_circle_outline</i>
         </button>
     </div>
 
-    <!-- Modal Structure -->
-    <div id="modal1" class="modal">
+    <div id="match-modal" class="modal">
         <div class="modal-content">
-            <h4 id="match-title">Here's Your Match!</h4>
+            <h4 class="match-title">Here's Your Match!</h4>
             <img id="match-img" src="" alt="a photo of your match">
             <h6 id="match-name"></h6>
         </div>
         <div class="modal-footer">
-            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Okay!</a>
+        </div>
+    </div>
+
+    <div id="name-url-modal" class="modal">
+        <div class="modal-content">
+            <h4 class="match-title">Please enter both your name and a photo url.</h4>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Okay</a>
+        </div>
+    </div>
+
+    <div id="gender-modal" class="modal">
+        <div class="modal-content">
+            <h4 class="match-title">Please choose a gender preference.</h4>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Okay</a>
         </div>
     </div>
 
