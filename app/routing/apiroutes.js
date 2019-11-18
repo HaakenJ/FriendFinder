@@ -34,17 +34,19 @@ function findClosestMatch(friendList, user) {
 
     friendList.forEach(friend => {
         totalScore = 0;
-        for (let i = 0; i < friend.scores.length; i++) {
-            diff = friend.scores[i] - user.scores[i];
-            totalScore += Math.abs(diff);
-        }
-        if (highScore === 0 && closestMatch === undefined) {
-            highScore = totalScore;
-            closestMatch = friend;
-            
-        } else if (totalScore < highScore) {
-            highScore = totalScore;
-            closestMatch = friend;
+        if (friend.gender === user.preference) {
+            for (let i = 0; i < friend.scores.length; i++) {
+                diff = friend.scores[i] - user.scores[i];
+                totalScore += Math.abs(diff);
+            }
+            if (highScore === 0 && closestMatch === undefined) {
+                highScore = totalScore;
+                closestMatch = friend;
+                
+            } else if (totalScore < highScore) {
+                highScore = totalScore;
+                closestMatch = friend;
+            }
         }
     })
     return closestMatch;
