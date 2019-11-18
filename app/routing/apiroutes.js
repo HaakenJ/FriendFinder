@@ -34,7 +34,7 @@ function findClosestMatch(friendList, user) {
 
     friendList.forEach(friend => {
         totalScore = 0;
-        if (friend.gender === user.preference) {
+        if (friend.gender === user.preference || user.preference === "N") {
             for (let i = 0; i < friend.scores.length; i++) {
                 diff = friend.scores[i] - user.scores[i];
                 totalScore += Math.abs(diff);

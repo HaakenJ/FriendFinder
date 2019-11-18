@@ -18,7 +18,7 @@ let friends = [{
     {
         "name": "Nichole Mason",
         "gender": "F",
-        "photo": "https://images.pexels.com/photos/https://images.pexels.com/photos/972217/pexels-photo-972217.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "photo": "https://images.pexels.com/photos/3199969/pexels-photo-3199969.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
         "scores": [
             "4",
             "2",
@@ -86,7 +86,7 @@ let friends = [{
     {
         "name": "Brittany Simpson",
         "gender": "F",
-        "photo": "https://images.pexels.com/photos/1543895/pexels-photo-1543895.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        "photo": "https://images.pexels.com/photos/1543895/pexels-photo-1543895.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
         "scores": [
             "4",
             "4",
@@ -99,7 +99,42 @@ let friends = [{
             "4",
             "5"
         ]
+    },
+    {
+        "name": "Horace Nash",
+        "gender": "M",
+        "photo": "https://images.pexels.com/photos/3206117/pexels-photo-3206117.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "scores": [
+            "1",
+            "2",
+            "5",
+            "3",
+            "2",
+            "5",
+            "4",
+            "4",
+            "3",
+            "2"
+        ]
+    },
+    {
+        "name": "Ernesto Garza",
+        "gender": "M",
+        "photo": "https://images.pexels.com/photos/3228895/pexels-photo-3228895.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "scores": [
+            "5",
+            "3",
+            "5",
+            "3",
+            "4",
+            "4",
+            "4",
+            "2",
+            "1",
+            "1"
+        ]
     }
+    
 ]
 
 module.exports = friends;
