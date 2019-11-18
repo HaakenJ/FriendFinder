@@ -1,0 +1,16 @@
+#Ideas
+
+## Using Firebase Realtime Database
+
+- Each time a user enters their info, that info is uploaded to firebase in a
+    group called 'friends'.
+- Then, apiRoutes will pull all the friends from firebase
+- apiRoutes compares the user's scores to all the scores in 'friends' 
+    - apiRoutes makes sure that the closest match is not a user's own account
+- Return the user's closest match and save that match's name in the user's 'matches' key
+
+## Using Firebase Auth
+
+- When a user is logged in using Google, they have the option to view their previous matches.
+
+- They click the option to do so and a modal pops up with a list of all their previous matches

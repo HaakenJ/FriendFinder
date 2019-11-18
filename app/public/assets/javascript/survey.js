@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    // Initialize Materialize forms and modals.
     $('select').formSelect();
     $('.modal').modal();
 
@@ -9,13 +10,17 @@ $(document).ready(function () {
         $("#match-name").text("");
         user.name = $("#name-input").val().trim();
         user.photo = $("#photo-input").val().trim();
+        user.gender = $("#gender-input").val();
 
-        if ($("#gender-choice").val() === null) {
+        // Let user know that they must enter a gender and preference.
+        if ($("#gender-choice").val() === null ||
+            $("#user-gender").val() === null) {
             $("#gender-modal").modal("open");
             return;
         }
         user.preference = $("#gender-choice").val().trim();
 
+        // Create scores array.
         let scores = [];
         for (let i = 1; i <= 10; i++) {
             if (isNaN(parseInt($("#q-" + i).val()))) {
@@ -26,6 +31,7 @@ $(document).ready(function () {
         }
         user.scores = scores;
 
+        // Let user know they must enter a name and photo url.
         if (user.name === "" || user.photo === "") {
             $("#name-url-modal").modal("open");
             return;
@@ -33,11 +39,12 @@ $(document).ready(function () {
 
         console.log(user);
 
+        // Send user data and receive the user's match
         $.post("/api/users", user)
-            .then((data) => {
-                console.log(data);
-                $("#match-name").text(data.name);
-                $("#match-img").attr("src", data.photo);
+            .then((match) => {
+                console.log(match);
+                $("#match-name").text(match.name);
+                $("#match-img").attr("src", match.photo);
                 $('#match-modal').modal("open");
             });
 

@@ -40,6 +40,17 @@
             <input placeholder="Photo Link" id="photo-input" type="text" class="validate">
         </div>
         <div class="input-field question">
+            <h5>I am a...</h5>
+            <div class="input-field">
+                <select id="user-gender">
+                    <option value="" disabled selected>Choose your option</option>
+                    <option value="F">Woman</option>
+                    <option value="M">Man</option>
+                    <option value="N">Prefer not to say</option>
+                </select>
+            </div>
+        </div>
+        <div class="input-field question">
             <h5>I'm looking to meet...</h5>
             <div class="input-field">
                 <select id="gender-choice">
@@ -209,15 +220,17 @@
 
     <div id="gender-modal" class="modal">
         <div class="modal-content">
-            <h4 class="match-title">Please choose a gender preference.</h4>
+            <h4 class="match-title">Please specify your gender and preference.</h4>
         </div>
         <div class="modal-footer">
             <a class="modal-close waves-effect waves-green btn-flat">Okay</a>
         </div>
     </div>
 
-
-
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-app.js"></script>
+    <!-- Realtime Database -->
+    <script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-database.js"></script>
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.4.1.js"
         integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
