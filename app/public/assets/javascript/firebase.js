@@ -28,7 +28,7 @@ function addUserToDB(name, photo, gender, scores) {
 function getFriends() {
     const friendsRef = database.ref("friends/");
     friendsRef.once("value").then(snap => {
-        console.log(snap);
-        return snap;
+        console.log(snap.val())
+        return snap.val();
     })
 }

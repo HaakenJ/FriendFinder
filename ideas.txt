@@ -14,3 +14,9 @@
 - When a user is logged in using Google, they have the option to view their previous matches.
 
 - They click the option to do so and a modal pops up with a list of all their previous matches
+
+
+## Once firebase is implemented and users can be added.
+
+- A match should only be returned if the user's preferences match.
+    - user.gender === friend.preference
