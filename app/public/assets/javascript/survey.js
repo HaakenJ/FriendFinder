@@ -5,6 +5,8 @@ $(document).ready(function () {
     let user = {};
 
     $("#submit-btn").on("click", () => {
+        $("#match-img").removeAttr("src");
+        $("#match-name").text("");
         user.name = $("#name-input").val().trim();
         user.photo = $("#photo-input").val().trim();
 
