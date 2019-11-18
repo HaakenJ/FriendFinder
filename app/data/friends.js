@@ -33,7 +33,7 @@ let friends = [{
         ]
     },
     {
-        "name": "Tracy Sparks",
+        "name": "Kellie Stanley",
         "gender": "F",
         "photo": "https://images.pexels.com/photos/1776862/pexels-photo-1776862.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
         "scores": [
