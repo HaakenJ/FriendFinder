@@ -31,6 +31,22 @@ $(document).ready(function () {
         }
         user.scores = scores;
 
+        getFriends();
+
+        addUserToDB("Rachel Adams", "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+            "F", [
+                "5",
+                "1",
+                "4",
+                "4",
+                "5",
+                "1",
+                "2",
+                "5",
+                "4",
+                "1"
+            ]);
+
         // Let user know they must enter a name and photo url.
         if (user.name === "" || user.photo === "") {
             $("#name-url-modal").modal("open");
