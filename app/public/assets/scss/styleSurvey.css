@@ -15,6 +15,11 @@
     width: 75%;
 }
 
+#match-name {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
 /* Mobile */
 @media only screen and (max-width: 568px) {
     .main-container {
@@ -34,6 +39,14 @@
 
     .question {
         margin-top: 45px;
+    }
+
+    #match-title {
+        font-size: 1.75rem;
+    }
+
+    #match-name {
+        font-size: 1.6rem;
     }
 }
 
