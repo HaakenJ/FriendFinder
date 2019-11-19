@@ -51,7 +51,7 @@ function findClosestMatch(friendObj, user) {
 
     friendList.forEach(friend => {
         if (friendObj[friend].name === user.name) {
-            continue;
+            return;
         }
         totalScore = 0;
         if (friendObj[friend].gender === user.preference || user.preference === "N") {

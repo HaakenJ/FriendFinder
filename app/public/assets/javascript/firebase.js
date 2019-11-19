@@ -14,7 +14,8 @@ firebase.initializeApp(firebaseConfig);
 const database = firebase.database();
 
 function addUserToDB(name, photo, gender, preference, scores) {
-    const userName = name.replace(/\s+/g, "").toLowerCase();
+    const userName = name.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s+/g, "").toLowerCase();
+    console.log(userName);
     const newUser = database.ref(`friends/${userName}`);
     newUser.set({
         userName: userName,

@@ -8,7 +8,7 @@ $(document).ready(function () {
     $("#submit-btn").on("click", () => {
         $("#match-img").removeAttr("src");
         $("#match-name").text("");
-        user.name = $("#name-input").val().trim();
+        user.name = $("#name-input").val().trim().replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s+/g, "");
         user.photo = $("#photo-input").val().trim();
         user.gender = $("#user-gender").val();
 
