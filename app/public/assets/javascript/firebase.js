@@ -14,22 +14,14 @@ firebase.initializeApp(firebaseConfig);
 const database = firebase.database();
 
 function addUserToDB(name, photo, gender, preference, scores) {
-    const userName = name.replace(/\s+/g, "");
-    const newUser = database.ref(`friends/${name}`);
+    const userName = name.replace(/\s+/g, "").toLowerCase();
+    const newUser = database.ref(`friends/${userName}`);
     newUser.set({
-        userName: userName.toLowerCase(),
+        userName: userName,
         name: name,
         photo: photo,
         gender: gender,
         preference: preference,
         scores: scores
-    })
-}
-
-function getFriends() {
-    const friendsRef = database.ref("friends/");
-    friendsRef.once("value").then(snap => {
-        console.log(snap.val())
-        return snap.val();
     })
 }

@@ -10,7 +10,7 @@ $(document).ready(function () {
         $("#match-name").text("");
         user.name = $("#name-input").val().trim();
         user.photo = $("#photo-input").val().trim();
-        user.gender = $("#gender-input").val();
+        user.gender = $("#user-gender").val();
 
         // Let user know that they must enter a gender and preference.
         if ($("#gender-choice").val() === null ||
