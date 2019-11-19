@@ -31,8 +31,6 @@ $(document).ready(function () {
         }
         user.scores = scores;
 
-        getFriends();
-
         // Let user know they must enter a name and photo url.
         if (user.name === "" || user.photo === "") {
             $("#name-url-modal").modal("open");
@@ -40,6 +38,10 @@ $(document).ready(function () {
         }
 
         console.log(user);
+
+        // Add the user's info to the DB.
+        addUserToDB(user.name, user.photo, user.gender, 
+            user.preference, user.scores);
 
         // Send user data and receive the user's match
         $.post("/api/users", user)

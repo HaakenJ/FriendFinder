@@ -13,7 +13,7 @@ firebase.initializeApp(firebaseConfig);
 
 const database = firebase.database();
 
-function addUserToDB(name, photo, gender, scores) {
+function addUserToDB(name, photo, gender, preference, scores) {
     const userName = name.replace(/\s+/g, "");
     const newUser = database.ref(`friends/${name}`);
     newUser.set({
@@ -21,6 +21,7 @@ function addUserToDB(name, photo, gender, scores) {
         name: name,
         photo: photo,
         gender: gender,
+        preference: preference,
         scores: scores
     })
 }
