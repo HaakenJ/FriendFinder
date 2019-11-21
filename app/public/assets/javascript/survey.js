@@ -2,6 +2,7 @@ $(document).ready(function () {
     // Initialize Materialize forms and modals.
     $('select').formSelect();
     $('.modal').modal();
+    $('.sidenav').sidenav();
 
     let user = {};
 
