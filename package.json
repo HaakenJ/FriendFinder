@@ -19,9 +19,8 @@
   "homepage": "https://github.com/HaakenJ/FriendFinder#readme",
   "dependencies": {
     "express": "^4.17.1",
+    "firebase": "^7.4.0",
     "path": "^0.12.7"
   },
-  "devDependencies": {
-    "firebase": "^7.4.0"
-  }
+  "devDependencies": {}
 }
