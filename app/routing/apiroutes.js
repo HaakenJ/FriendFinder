@@ -58,7 +58,7 @@ function findClosestMatch(friendObj, user) {
             return;
         }
         totalScore = 0;
-        if (friendObj[friend].gender === user.preference || user.preference === "N") {
+        if (friendObj[friend].gender === user.preference || user.preference === "N" || friendObj[friend].gender === "N") {
             for (let i = 0; i < friendObj[friend].scores.length; i++) {
                 diff = friendObj[friend].scores[i] - user.scores[i];
                 totalScore += Math.abs(diff);
