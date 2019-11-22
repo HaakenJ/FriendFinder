@@ -9,8 +9,6 @@ $(document).ready(function () {
     $("#submit-btn").on("click", () => {
         $("#match-img").removeAttr("src");
         $("#match-name").text("");
-        user.name = $("#name-input").val().trim().replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s+/g, "");
-        user.photo = $("#photo-input").val().trim();
 
         // Let user know that they must enter a gender and preference.
         if ($("#gender-choice").val() === null ||
@@ -18,6 +16,13 @@ $(document).ready(function () {
             $("#gender-modal").modal("open");
             return;
         }
+        // Let user know they must enter a name and photo url.
+        if (user.name === "" || user.photo === "") {
+            $("#name-url-modal").modal("open");
+            return;
+        }
+        user.name = $("#name-input").val().trim().replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s+/g, "");
+        user.photo = $("#photo-input").val().trim();
         user.gender = $("#user-gender").val();
         user.preference = $("#gender-choice").val();
 
@@ -31,16 +36,6 @@ $(document).ready(function () {
             }
         }
         user.scores = scores;
-
-        // Let user know they must enter a name and photo url.
-        if (user.name === "" || user.photo === "") {
-            $("#name-url-modal").modal("open");
-            return;
-        }
-
-        // Add the user's info to the DB.
-        addUserToDB(user.name, user.photo, user.gender, 
-            user.preference, user.scores);
 
         // Send user data and receive the user's match
         $.post("/api/users", user)

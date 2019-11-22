@@ -2,6 +2,7 @@ const express = require("express");
 const app = express();
 const router = express.Router();
 const firebase = require("firebase");
+
 firebase.initializeApp({
     "appName": "FriendFinder",
     "serviceAccount": "./service-account.json",
@@ -9,6 +10,7 @@ firebase.initializeApp({
     databaseURL: "https://friendfinder-b413b.firebaseio.com",
     storageBucket: "friendfinder-b413b.appspot.com"
 });
+
 const database = firebase.app().database();
 
 app.use(express.urlencoded({
@@ -19,6 +21,8 @@ app.use(express.json());
 // Receive user data and find their match.
 router.post("/api/users", (req, res) => {
     const newUser = req.body;
+
+    addUserToDB(newUser);
 
     const friendsRef = database.ref("friends/");
     friendsRef.once("value")
@@ -44,7 +48,7 @@ module.exports = router;
 function findClosestMatch(friendObj, user) {
     let totalScore = 0,
         closestMatch,
-        highScore = 0,
+        bestScore = 0,
         diff = 0,
         friendList = Object.keys(friendObj);
     
@@ -59,12 +63,12 @@ function findClosestMatch(friendObj, user) {
                 diff = friendObj[friend].scores[i] - user.scores[i];
                 totalScore += Math.abs(diff);
             }
-            if (highScore === 0 && closestMatch === undefined) {
-                highScore = totalScore;
+            if (bestScore === 0 && closestMatch === undefined) {
+                bestScore = totalScore;
                 closestMatch = friendObj[friend];
                 
-            } else if (totalScore < highScore) {
-                highScore = totalScore;
+            } else if (totalScore < bestScore) {
+                bestScore = totalScore;
                 closestMatch = friendObj[friend];
             }
         }
@@ -72,4 +76,16 @@ function findClosestMatch(friendObj, user) {
     return closestMatch;
 }
 
+function addUserToDB(user) {
+    const userName = user.name.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s/g, "").toLowerCase();
+    const newUser = database.ref(`friends/${userName}`);
+    newUser.set({
+        userName: userName,
+        name: user.name,
+        photo: user.photo,
+        gender: user.gender,
+        preference: user.preference,
+        scores: user.scores
+    })
+}
 
