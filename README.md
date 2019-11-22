@@ -3,6 +3,8 @@
 FriendFinder is a web app for finding new friends and love interests.  Users enter their name and a photo url, choose their gender and match gender preference
  answer ten questions about themselves, and hit submit to see who their closest match is.
 
+ * [Deployed App](https://friendfinder-12345.herokuapp.com/)
+
 
 ## Getting Started
 

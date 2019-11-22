@@ -7,8 +7,15 @@ $(document).ready(function () {
     let user = {};
 
     $("#submit-btn").on("click", () => {
+        // Text and images from match modal.
         $("#match-img").removeAttr("src");
         $("#match-name").text("");
+
+        // Let user know they must enter a name and photo url.
+        if (user.name === "" || user.photo === "") {
+            $("#name-url-modal").modal("open");
+            return;
+        }
 
         // Let user know that they must enter a gender and preference.
         if ($("#gender-choice").val() === null ||
@@ -16,11 +23,7 @@ $(document).ready(function () {
             $("#gender-modal").modal("open");
             return;
         }
-        // Let user know they must enter a name and photo url.
-        if (user.name === "" || user.photo === "") {
-            $("#name-url-modal").modal("open");
-            return;
-        }
+
         user.name = $("#name-input").val().trim().replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s+/g, "");
         user.photo = $("#photo-input").val().trim();
         user.gender = $("#user-gender").val();
