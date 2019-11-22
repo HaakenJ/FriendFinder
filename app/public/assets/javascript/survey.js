@@ -4,9 +4,8 @@ $(document).ready(function () {
     $('.modal').modal();
     $('.sidenav').sidenav();
 
-    let user = {};
-
     $("#submit-btn").on("click", () => {
+        let user = {};
         // Text and images from match modal.
         $("#match-img").removeAttr("src");
         $("#match-name").text("");
