@@ -30,8 +30,8 @@ router.post("/api/users", (req, res) => {
             const friends = snap.val()
 
             res.json(findClosestMatch(friends, newUser));
-        })
-})
+        });
+});
 
 // Return a list of the friends to a user.
 router.get("/api/users", (req, res) => {
